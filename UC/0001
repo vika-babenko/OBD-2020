@@ -1,25 +1,29 @@
 @startuml
-|Користувач|
+|Респондент|
 start
-:Натискає на кнопку реєстрація;
+:Натискає на кнопку "Реєстрація";
 |Система|
 :Пропонує форму "Реєстрація нового
 користувача";
-|Користувач|
+|Респондент|
 :Заповнює необхідні поля(логін, пароль,
 прізвище, ім'я, e-mail, сфера діяльності);
 :Підтверджує коректність введених даних;
+
+
 |Система|
 :Перевіряє введені данні;
+note right #FFAAAA: Можливо\n EX.001.001\n EX.001.002.
 :Надсилає лист з підтвердженням
 реєстрації на пошту;
-|Користувач|
-:Отримує лист для підтверження
-реєстрації;
+|Респондент|
 :Отримує доступ до власного кабінету
 в системі;
 
 stop
 
 @enduml
-http://www.plantuml.com/plantuml/png/VLDJmfn147oVKqpi0yGvIcpZALeZjdc3sScdzHMgRvJgdjzQDgjQtwbxzy_SlV_WndNt2DymaneggKj3ceW8qdtapE-Eu2VLXZenelJ1OuhWAKynmnmZQNhcvlB1iciCwSWdUNsKi7yJ979C41uHwZVzJE9tAar2ISk89yJOZZ_hGRoHH7x_OUOmMbycmlQZ6pUWV9yHZ2sIxrKgFQSwaBPyGaRZ9s_-iRpUYx7Iq3uzgCOWDNEyEEWmbnhj9I8P-iWFUcgJFVBweBzmwCQPAzTfgBELN0ltoBHopTJYhQ9F-uvQy-JaDA85PYXi14XDvHZHnO8iuOL7r3Xa_4x9slOKGn8tdYnoGub4gCbh-R0AGJujvbCycdRAMkgeC4ux7IT0ZvBDhoqKkMM-niHjiEhFTX4sIEdf_BTOo2_BgtJZgrWpNS4QvcNU3LcFheVBI9e8vwPuHEklZcaw8Prsm42NZ5m37I9tjpnCdGuF_zPjvqvTk7cUJyT_
+ 
+
+
+http://www.plantuml.com/plantuml/png/VLFLeHin4FnN5Hjc_0jpMWWpCrs-WcOxp8mTA6QwSmkp7MLMUan6BS-CzdRVIyxSJUxVkEuUuWzQciC86L8qqKAg-OSknDrM_8JNFBfCwFFqGPZZXUSK6KlwMf35eS47pMbUdpAdh9_qzU9jxY7-MXshMnZ2FtHRyPi9MPoa1JRJ8ZAwXlDraJ2cpcy3cKFVicDFBT3jjGBFIVDGs8hFyC5Pf-DL1D-Y-KzB-ebvgNwI41_ewvKOs1ZwqxNcz9naWHTh7KRwbFuEwfnTGskjq1gkqDThvSAw6sUkNASZHoej0ove6dAhDF01wwTLsuoypQGQTKlaz7QG898Yh3v311GANWZgbXUvS6f9UFJnkCsvERMrjZJh-ebmN-k7AJqYqzY1nstkvgtaWjozSkbo8aiE7jp3rrR13n9kKuQkANxyfXmul7xZnatsdMfiNX-tWbnoJ1t4hM2LmH5qADvCee54Ib66ZewPj_mvxfHTX5RfBonmeR-iZbE7GJj6ei05Z89Xb0rG3cdS6PFNyxu_qT6oH8UwC3oXdOd1NRzrsxdT5swUjmT2_WC0
