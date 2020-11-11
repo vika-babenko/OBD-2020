@@ -1,3 +1,4 @@
+UC1.1
 @startuml
 |Респондент|
 start
@@ -14,16 +15,90 @@ start
 |Система|
 :Перевіряє введені данні;
 note right #FFAAAA: Можливо\n EX.001.001\n EX.001.002.
-:Надсилає лист з підтвердженням
-реєстрації на пошту;
+:Створює обліковий запис;
+:Генерує ключ активації;
 |Респондент|
+:Отримує лист на вказану ним електронну
+пошту для підтвердження реєстрації;
 :Отримує доступ до власного кабінету
 в системі;
 
 stop
 
 @enduml
- 
+
+UC1.2
+@startuml
+|Респондент|
+start
+:Натискає на кнопку "Редагувати
+обліковий запис";
+|Система|
+:Надає форму "Зміни у обліковому записі";
+|Респондент|
+:Редагує обліковий запис;
+:Натискає на кнопку "Зберегти зміни";
+|Система|
+:Перевіряє внесені дані;
+note right #FFAAAA: Можливо\n EX.002.001.
+:Зберігає зміни;
+
+stop
+
+@enduml
+
+UC1.3
+@startuml
+|Респондент|
+start
+:Натискає на кнопку "Видалити 
+обліковий запис";
+|Система|
+:Надає форму "Видалення облікового 
+запису";
+|Респондент|
+:Вводить свій логін, для підтвердження
+видалення;
+:Натискає на кнопку "Підтвердити";
+|Система|
+:Видаляє обліковий запис;
 
 
-http://www.plantuml.com/plantuml/png/VLFLeHin4FnN5Hjc_0jpMWWpCrs-WcOxp8mTA6QwSmkp7MLMUan6BS-CzdRVIyxSJUxVkEuUuWzQciC86L8qqKAg-OSknDrM_8JNFBfCwFFqGPZZXUSK6KlwMf35eS47pMbUdpAdh9_qzU9jxY7-MXshMnZ2FtHRyPi9MPoa1JRJ8ZAwXlDraJ2cpcy3cKFVicDFBT3jjGBFIVDGs8hFyC5Pf-DL1D-Y-KzB-ebvgNwI41_ewvKOs1ZwqxNcz9naWHTh7KRwbFuEwfnTGskjq1gkqDThvSAw6sUkNASZHoej0ove6dAhDF01wwTLsuoypQGQTKlaz7QG898Yh3v311GANWZgbXUvS6f9UFJnkCsvERMrjZJh-ebmN-k7AJqYqzY1nstkvgtaWjozSkbo8aiE7jp3rrR13n9kKuQkANxyfXmul7xZnatsdMfiNX-tWbnoJ1t4hM2LmH5qADvCee54Ib66ZewPj_mvxfHTX5RfBonmeR-iZbE7GJj6ei05Z89Xb0rG3cdS6PFNyxu_qT6oH8UwC3oXdOd1NRzrsxdT5swUjmT2_WC0
+stop
+
+@enduml
+
+UC1.4
+@startuml
+|Користувач|
+start
+:Натискає на кнопку "Увійти";
+|Система|
+:Завантажує форму автентифікації;
+|Користувач|
+:Вводить e-mail та пароль;
+:Натискає на кнопку "Підтвердити";
+|Система|
+:Перевіряє коректність даних;
+note right #FFAAAA: Можливо\n EX.004.001.\n EX.004.002.
+:Авторизує користувача;
+
+
+stop
+
+@enduml
+
+UC1.5
+@startuml
+|Користувач|
+start
+:Переходить в листі за підтвержуючим
+посиланням;
+note left #FFAAAA: Можливо\n EX.005.001.
+|Система|
+:Підтверджує обліковий запис;
+
+stop
+
+@enduml
+
